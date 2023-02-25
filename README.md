@@ -23,7 +23,7 @@
 <div align="center">
 
   <a href="https://github.com/TheTrustyPwo/ScienceNexus">
-    <img src="assets/icon.png" alt="Logo" width="100" height="100">
+    <img src="src/assets/icon.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center"><b>Science Nexus</b></h3>
