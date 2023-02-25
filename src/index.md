@@ -1,32 +1,39 @@
 <div align="center">
-  <a href="https://github.com/TheTrustyPwo/Quantum-Physics/graphs/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/TheTrustyPwo/Quantum-Physics.svg?style=for-the-badge" alt="Contributors">
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus/graphs/contributors" target="_blank">
+    <img src="https://img.shields.io/github/contributors/TheTrustyPwo/ScienceNexus.svg?style=for-the-badge" alt="Contributors">
   </a>
-  <a href="https://github.com/TheTrustyPwo/Quantum-Physics/network/members" target="_blank">
-    <img src="https://img.shields.io/github/forks/TheTrustyPwo/Quantum-Physics.svg?style=for-the-badge" alt="Forks">
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus/network/members" target="_blank">
+    <img src="https://img.shields.io/github/forks/TheTrustyPwo/ScienceNexus.svg?style=for-the-badge" alt="Forks">
   </a>
-  <a href="https://github.com/TheTrustyPwo/Quantum-Physics/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/TheTrustyPwo/Quantum-Physics.svg?style=for-the-badge" alt="Contributors">
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/TheTrustyPwo/ScienceNexus.svg?style=for-the-badge" alt="Contributors">
   </a>
-  <a href="https://github.com/TheTrustyPwo/Quantum-Physics/issues" target="_blank">
-    <img src="https://img.shields.io/github/issues/TheTrustyPwo/Quantum-Physics.svg?style=for-the-badge" alt="Forks">
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus/issues" target="_blank">
+    <img src="https://img.shields.io/github/issues/TheTrustyPwo/ScienceNexus.svg?style=for-the-badge" alt="Forks">
   </a>
-  <a href="https://github.com/TheTrustyPwo/Quantum-Physics/blob/master/LICENSE.txt" target="_blank">
-    <img src="https://img.shields.io/github/license/TheTrustyPwo/Quantum-Physics.svg?style=for-the-badge" alt="Contributors">
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus/blob/master/LICENSE.txt" target="_blank">
+    <img src="https://img.shields.io/github/license/TheTrustyPwo/ScienceNexus.svg?style=for-the-badge" alt="Contributors">
   </a>
 </div>
 
 
 <!-- PROJECT TITLE -->
 
+<br>
 <div align="center">
-<h3 align="center">Quantum Physics</h3>
+
+  <a href="https://github.com/TheTrustyPwo/ScienceNexus">
+    <img src="assets/icon.png" alt="Logo" width="100" height="100">
+  </a>
+
+  <h3 align="center"><b>Science Nexus</b></h3>
+
   <p align="center">
-    A collection of useful notes and materials for the study of Quantum Physics!
-    <br/>
-    <a href="https://github.com/TheTrustyPwo/Quantum-Physics/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/TheTrustyPwo/Quantum-Physics/issues">Request Feature</a>
+    Unlocking the mysteries of the universe & Exploring the wonders of science 
+    <br>
+    <a href="https://github.com/TheTrustyPwo/ScienceNexus/issues">Report Bug</a>
+    .
+    <a href="https://github.com/TheTrustyPwo/ScienceNexus/issues">Request Feature</a>
   </p>
 </div>
 
@@ -36,7 +43,7 @@
 
 ## About The Project
 
-This project's purpose is to make quantum physics easier and more accessible to everyone. The notes and information on this website are the product of my personal comprehension and internalization of the plethora of online resources. It's a technique I use to reinforce my learning, and I believed making it public would be greatly beneficial. If anyone notices any incorrect information or logical consistencies in the materials, please do not hesitate to open an issue and notify me!
+This project's purpose is to create a go-to destination for a wide range of fascinating scientific topics. Our website is dedicated to sharing resources on various areas of science, from personality typology to computer science, to quantum physics. Our mission is to provide an online platform where people can learn and explore knowledge about the enthralling scientific theories, breakthroughs and discoveries. Whether you are a student, researcher, or simply curious about the world around us, you'll find a wealth of valuable resources, including articles, videos, infographics, and more! Join our community of science enthusiasts and start your journey of discovery today!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,6 +81,6 @@ Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
 
 TheTrustyPwo - Pwo#0001 - thetrustypwo@gmail.com
 
-Project Link: [https://github.com/TheTrustyPwo/Quantum-Physics](https://github.com/TheTrustyPwo/Quantum-Physics)
+Project Link: [https://github.com/TheTrustyPwo/ScienceNexus](https://github.com/TheTrustyPwo/ScienceNexus)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

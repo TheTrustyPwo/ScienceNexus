@@ -1,6 +1,12 @@
 - Home
     - [Main Page](index.md)
     - [Navigation](navigation.md)
-    - [Introduction](introduction/introduction.md)
-- Quantization of Energy
-    - [Black Body Radiation](quantization_of_energy/black_body_radiation.md)
+- Computer Science
+    - Theories
+        - [Information Theory](computer_science/theories/information_theory.md)
+- Quantum Physics
+    - [Introduction](quantum_physics/introduction.md)
+    - Quantization
+        - [Black Body Radiation](quantum_physics/quantization/black_body_radiation.md)
+- Personality Typology
+    - [Extraversion vs Introversion](personality_typology/extraversion_introversion.md)
