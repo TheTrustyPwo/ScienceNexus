@@ -1,3 +1,0 @@
-## Navigation
-
-{% include 'navigation.md' %}
