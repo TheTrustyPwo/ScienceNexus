@@ -9,4 +9,7 @@
     - Quantization
         - [Black Body Radiation](quantum_physics/quantization/black_body_radiation.md)
 - Personality Typology
-    - [Extraversion vs Introversion](personality_typology/extraversion_introversion.md)
+    - The Dichotomies
+        - [Extraversion vs Introversion](personality_typology/the_dichotomies/extraversion_vs_introversion.md)
+        - [Thinking vs Feeling](personality_typology/the_dichotomies/thinking_vs_feeling.md)
+        - [Sensation vs Intuition](personality_typology/the_dichotomies/sensation_vs_intuition.md)

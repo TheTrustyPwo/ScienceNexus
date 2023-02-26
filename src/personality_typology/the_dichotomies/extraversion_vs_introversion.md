@@ -14,7 +14,7 @@ Introversion is about recognizing similarities in impressions that have already 
 
 For example, there are many diverse types of cats in the world, but they all appeal to the perfect idea of ‘cat-ness.’ Each cat is an imperfect imitation of the ideal cat; the form of cat; the one true quintessential cat, for which the subject’s mind has created.
 
-## Comparison
+## Summary
 
 Obviously, it is impossible to be fully Extraverted or Introverted. If a person was completely Introverted, they would be approaching objects fully based on already obtained past perceptions. But how would they be able to retain such memories if their approach was to always abstract from the object? Likewise, the complete Extravert would be approaching objects with absolutely no prior knowledge. They would never store the impressions of the object.
 
