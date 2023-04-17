@@ -6,8 +6,11 @@
         - [Information Theory](computer_science/theories/information_theory.md)
 - Quantum Physics
     - [Introduction](quantum_physics/introduction.md)
-    - Quantization
+    - Quantization of Energy
         - [Black Body Radiation](quantum_physics/quantization/black_body_radiation.md)
+        - [Bohr's Model](quantum_physics/quantization/bohr_model.md)
+    - Wave-Particle Duality
+        - [Young's Experiment](quantum_physics/duality/young_experiment.md)
 - Personality Typology
     - The Dichotomies
         - [Extraversion vs Introversion](personality_typology/the_dichotomies/extraversion_vs_introversion.md)
