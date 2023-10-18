@@ -4,15 +4,20 @@
 - Computer Science
     - Theories
         - [Information Theory](computer_science/theories/information_theory.md)
-- Quantum Physics
-    - [Introduction](quantum_physics/introduction.md)
-    - Quantization of Energy
-        - [Black Body Radiation](quantum_physics/quantization/black_body_radiation.md)
-        - [Bohr's Model](quantum_physics/quantization/bohr_model.md)
-    - Wave-Particle Duality
-        - [Young's Experiment](quantum_physics/duality/young_experiment.md)
-- Personality Typology
-    - The Dichotomies
-        - [Extraversion vs Introversion](personality_typology/the_dichotomies/extraversion_vs_introversion.md)
-        - [Thinking vs Feeling](personality_typology/the_dichotomies/thinking_vs_feeling.md)
-        - [Sensation vs Intuition](personality_typology/the_dichotomies/sensation_vs_intuition.md)
+- Physics
+    - [Kinematics](physics/kinematics.md)
+    - Quantum Physics
+        - [Introduction](physics/quantum_physics/introduction.md)
+        - Quantization of Energy
+            - [Black Body Radiation](physics/quantum_physics/quantization/black_body_radiation.md)
+            - [Bohr's Model](physics/quantum_physics/quantization/bohr_model.md)
+        - Wave-Particle Duality
+            - [Young's Experiment](physics/quantum_physics/duality/young_experiment.md)
+- Psychology
+    - Typology
+        - The Dichotomies
+            - [Extraversion vs Introversion](psychology/typology/the_dichotomies/extraversion_vs_introversion.md)
+            - [Thinking vs Feeling](psychology/typology/the_dichotomies/thinking_vs_feeling.md)
+            - [Sensation vs Intuition](psychology/typology/the_dichotomies/sensation_vs_intuition.md)
+    - Books
+        - [The Laws of Human Nature](psychology/books/law_of_human_nature.md)
