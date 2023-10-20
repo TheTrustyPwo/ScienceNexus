@@ -95,3 +95,37 @@ $$ \tan\theta = \frac{2lv^2 \pm 2l\sqrt{v^4 - g^2l^2 - 2gv^2h}}{2gl^2} = \frac{v
 $$ \theta = \arctan\left(\frac{v^2 \pm\sqrt{v^4 - g^2l^2 - 2gv^2h}}{gl}\right) $$
 
 Notice that there can be 2 solutions. This is because the ball can hit the apple either before or after it has reached its peak vertical displacement. In the case that there is only 1 solution, the ball will hit the apple at its peak vertical displacement.
+
+### Practice Problems
+
+For all problems, assume $g = 10$ m/s. Click to reveal the solutions.
+
+#### Question 1
+
+During a fireworks display, a shell is shot into the air with an initial speed of $70.0$ m/s at an angle of $75.0^\circ$ above the horizontal. The fuse is timed to ignite the shell just as it reaches its highest point above the ground.
+
+??? question "(a) Calculate the height at which the shell explodes."
+	Since we are only interested in height, only components in the vertical direction matter. Let's also denote the initial speed as $u$.
+
+	$$ s_y = ut\sin\theta - \frac{1}{2}gt^2 $$
+
+	When the shell reaches its apex (maximum height), we know that the final velocity $v_y = 0$, hence
+
+	$$ t = \frac{u_y - v_y}{g} = \frac{u_y}{g} = \frac{u\sin\theta}{g} $$
+
+	Substituting $t$
+
+	$$ s_y = \frac{u^2\sin^2\theta}{g} - \frac{u^2\sin^2\theta}{2g} = \frac{u^2\sin^2\theta}{2g} $$
+
+	Plugging in the values, we get
+
+	$$ s_y = \frac{70.0^2\sin^2 75.0^\circ}{2 \times 10} = 233m \; (3sf) $$
+
+??? question "(b) What is the horizontal displacement of the shell when it explodes?"
+	$v_x$ remains constant as there is no force and hence no acceleration in the horizontal direction.
+
+	$$ s_x = v_xt = u\cos\theta \cdot \frac{u\sin\theta}{g} $$
+
+	Substituting known values
+
+	$$ s_x = 70.0\cos75.0^\circ\times\frac{70.0\sin75.0^\circ}{10} = 123m \; (3sf) $$
