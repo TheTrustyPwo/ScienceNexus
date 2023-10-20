@@ -5,7 +5,9 @@
     - Theories
         - [Information Theory](computer_science/theories/information_theory.md)
 - Physics
-    - [Kinematics](physics/kinematics.md)
+    - Kinematics
+        - [Fundamentals](physics/kinematics/kinematics/main.md)
+        - [Projectile Motion](physics/kinematics/projectile_motion/main.md)
     - Quantum Physics
         - [Introduction](physics/quantum_physics/introduction.md)
         - Quantization of Energy
