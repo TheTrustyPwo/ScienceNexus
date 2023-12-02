@@ -8,6 +8,11 @@
     - Kinematics
         - [Fundamentals](physics/kinematics/kinematics/main.md)
         - [Projectile Motion](physics/kinematics/projectile_motion/main.md)
+    - Astrophysics
+        - [Introduction](physics/astrophysics/introduction.md)
+        - Fundamentals
+            - [Matter](physics/astrophysics/matter/main.md)
+            - [Gravity](physics/astrophysics/gravity/main.md)
     - Quantum Physics
         - [Introduction](physics/quantum_physics/introduction.md)
         - Quantization of Energy

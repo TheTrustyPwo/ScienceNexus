@@ -43,7 +43,7 @@
 
 ## About The Project
 
-This project's purpose is to create a go-to destination for a wide range of fascinating scientific topics. Our website is dedicated to sharing resources on various areas of science, from personality typology to computer science, to quantum physics. Our mission is to provide an online platform where people can learn and explore knowledge about the enthralling scientific theories, breakthroughs and discoveries. Whether you are a student, researcher, or simply curious about the world around us, you'll find a wealth of valuable resources, including articles, videos, infographics, and more! Join our community of science enthusiasts and start your journey of discovery today!
+This project's purpose is to create a go-to destination for a wide range of fascinating scientific topics. The website is dedicated to sharing resources on various areas of science. Our mission is to provide an online platform where people can learn and explore knowledge about the enthralling scientific theories, breakthroughs and discoveries. Whether you are a student, researcher, or simply curious about the world around us, you'll find a wealth of valuable resources! Join us and start your journey of discovery today!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,7 +79,7 @@ Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-TheTrustyPwo - Pwo#0001 - thetrustypwo@gmail.com
+TheTrustyPwo - thepwo (Discord) - thetrustypwo@gmail.com
 
 Project Link: [https://github.com/TheTrustyPwo/ScienceNexus](https://github.com/TheTrustyPwo/ScienceNexus)
 
