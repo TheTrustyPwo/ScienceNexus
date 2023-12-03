@@ -11,8 +11,12 @@
     - Astrophysics
         - [Introduction](physics/astrophysics/introduction.md)
         - Fundamentals
-            - [Matter](physics/astrophysics/matter/main.md)
-            - [Gravity](physics/astrophysics/gravity/main.md)
+            - [Matter](physics/astrophysics/fundamentals/matter/main.md)
+            - [Gravity](physics/astrophysics/fundamentals/gravity/main.md)
+            - [Radiation](physics/astrophysics/fundamentals/radiation/main.md)
+        - Relativity
+            - [Special Relativity](physics/astrophysics/relativity/special_relativity/main.md)
+            - [General Relativity](physics/astrophysics/relativity/general_relativity/main.md)
     - Quantum Physics
         - [Introduction](physics/quantum_physics/introduction.md)
         - Quantization of Energy
