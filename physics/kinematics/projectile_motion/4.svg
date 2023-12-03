@@ -1,0 +1,241 @@
+<svg width="457.6" height="356.8" viewBox="0 0 457.6 356.8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>RobinHood4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(0.4 0 0 0.4 -1730.4 -4728)" figma:type="canvas">
+<rect x="4326" y="11820" width="1144" height="892" fill="#E5E5E5"/>
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 4326 11820L 5470 11820L 5470 12712L 4326 12712L 4326 11820Z" fill="#FFFFFF"/>
+</mask>
+<g id="RobinHood4" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<path d="M 4326 11820L 5470 11820L 5470 12712L 4326 12712L 4326 11820Z" fill="#FFFFFF"/>
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 5546.47 12610.5)" fill="#67D94C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Arrow" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Line 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="matrix(0.436534 -0.899688 0.899538 0.436844 4443.08 12154.7)" fill="#CEBB00" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line 9 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.436534 -0.899688 0.899538 0.436844 4441.93 12154.2)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 14" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path3_fill" transform="translate(4416 12217)" fill="#E5B100" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse 22" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(4410.5 12190.8)" fill="#D61F06" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 23" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path5_fill" transform="translate(4417.05 12195.7)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 24" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="matrix(-0.965926 -0.258819 0.258819 -0.965926 4428.28 12193.8)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Line 15" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path7_stroke" transform="matrix(0.999998 0.00195277 0.00195277 -0.999998 4508.98 12558.9)" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Robin Hood Bent Body 3" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Pants" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 10" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path8_fill" transform="matrix(0.472458 -0.881353 0.881353 0.472458 5333.31 12600)" fill="#1C9500" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 10" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path9_fill" transform="matrix(0.708016 0.706196 -0.706196 0.708016 5337.69 12593.8)" fill="#1C9500" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Vector 10" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path10_fill" transform="matrix(0.472458 -0.881353 0.881353 0.472458 5334.77 12606.8)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 10" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path11_fill" transform="matrix(0.708016 0.706196 -0.706196 0.708016 5339.93 12599.1)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path12_fill" transform="matrix(6.23417e-17 -1 1 6.01329e-17 5356.04 12622.2)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Back shoe" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path13_fill" transform="matrix(-0.999997 0.00223282 0.00223282 0.999997 5324.1 12613.6)" fill="#5F4234" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path14_fill" transform="matrix(-0.999997 0.00223282 0.00223282 0.999997 5323.59 12611.2)" fill="#5F4234" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path15_fill" transform="matrix(-0.999997 0.00223282 0.00223282 0.999997 5324.11 12618.5)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Shirt" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path16_fill" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 5394.61 12623.2)" fill="#219653" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Front shoe" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path17_fill" transform="matrix(-0.999901 0.0140597 0.0140597 0.999901 5329.22 12615.3)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path18_fill" transform="matrix(-0.999901 0.0140597 0.0140597 0.999901 5329.25 12617.8)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path15_fill" transform="matrix(-0.999901 0.0140597 0.0140597 0.999901 5329.32 12622.6)" fill="#FBE6B8" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Head" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path19_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5400.09 12609.3)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path20_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5417.25 12604.6)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path21_fill" transform="matrix(-0.643638 -0.764779 -0.765421 0.644179 5395.8 12597.4)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path22_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5417.25 12604.6)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path23_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5406.23 12609.4)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path24_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5398.55 12600.3)" fill="#161616" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path25_fill" transform="matrix(-0.875116 0.483914 0.481985 0.876179 5392.73 12600.9)" fill="#FF664D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path26_fill" transform="matrix(-0.481985 -0.876179 -0.875116 0.483914 5400.46 12599.3)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 6" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path27_fill" transform="matrix(0.60746 0.794359 -0.794395 0.60739 5406.45 12578.1)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 7" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path28_fill" transform="matrix(-0.711505 0.702441 -0.694297 -0.719932 5421.31 12605.7)" fill="#FFF7E6" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path29_stroke" transform="matrix(-0.481306 0.876585 -0.876197 -0.481894 5421.83 12604.7)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path30_stroke" transform="matrix(-0.481306 0.876585 -0.876197 -0.481894 5415.96 12601.7)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path30_stroke" transform="matrix(-0.481306 0.876585 -0.876197 -0.481894 5413.48 12600)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path31_stroke" transform="matrix(0.481306 -0.876585 -0.876197 -0.481894 5413.48 12600)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 8" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path31_stroke" transform="matrix(0.481306 -0.876585 -0.876197 -0.481894 5415.96 12601.7)" fill="#AA7956" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path32_stroke" transform="matrix(0.670821 0.741881 -0.741531 0.670627 5403.68 12591.1)" fill="#4F372B" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Robin Hood arms 3" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Back arm" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path33_fill" transform="matrix(-0.57012 -0.821562 -0.821562 0.57012 5402.11 12596.7)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Back arm" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path34_fill" transform="matrix(-0.628705 -0.777644 -0.777644 0.628705 5389 12570)" fill="#EFBF99" style="mix-blend-mode:normal;"/>
+</g>
+<g id="bow string" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path35_stroke" transform="matrix(-0.183243 -0.983068 -0.983068 0.183243 5423.56 12582.3)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Front arm and hand" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path36_fill" transform="matrix(-0.926137 -0.377187 0.382233 -0.924066 5381.11 12615.5)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+<g id="front arm" style="mix-blend-mode:normal;" figma:type="frame">
+<mask id="mask1_alpha" mask-type="alpha">
+<path d="M 5377.35 12582.9L 5387.55 12582.8L 5387.58 12593L 5377.38 12593.1L 5377.35 12582.9Z" fill="#FFFFFF"/>
+</mask>
+<g id="fronthand" style="mix-blend-mode:normal;" mask="url(#mask1_alpha)" figma:type="frame">
+</g>
+<g id="front hand" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path37_fill" transform="matrix(-0.660397 -0.748249 -0.755831 0.657829 5387.57 12588.4)" fill="#FCC9A1" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<g id="Shirt" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path38_fill" transform="matrix(0.857087 -0.515172 -0.518392 -0.855143 5379.89 12620.7)" fill="#20A900" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path39_fill" transform="matrix(-0.183243 -0.983068 -0.983068 0.183243 5427.2 12576)" fill="#C4C4C4" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path39_fill" transform="matrix(-0.183243 -0.983068 -0.983068 0.183243 5427.2 12576)" fill="url(#paint43_linear)" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path40_fill" transform="matrix(-0.167873 -0.985809 -0.985779 0.16805 5404.75 12570.9)" fill="#6D4C3C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path41_fill" transform="matrix(-0.183243 -0.983068 -0.983068 0.183243 5348.97 12590.2)" fill="#D8D8D8" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path42_fill" transform="matrix(0.144273 -0.989538 0.990061 0.14064 5420.81 12575.3)" fill="#D8D8D8" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 7" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path43_fill" transform="matrix(0.882084 0.471092 0.409754 -0.912196 5382.97 12572)" fill="#EFBF99" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint43_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.02589e-15 82.7613 -16.7541 5.06767e-15 16.7541 -1.14854e-14)">
+<stop offset="0" stop-color="#BBBBBB"/>
+<stop offset="0.47" stop-color="#919191"/>
+<stop offset="1" stop-color="#BBBBBB"/>
+</linearGradient>
+<path id="path0_fill" d="M 0 5.42364C 0 5.42364 106.378 8.13545 174.541 8.13545C 286.906 8.13545 319.905 8.13545 432.27 8.13545C 526.145 8.13545 608.777 13.5591 702.652 13.5591C 832.086 13.5591 904.654 2.71182 1034.09 2.71182C 1135.07 2.71182 1191.69 0 1292.68 0C 1373.64 0 1500 8.13545 1500 8.13545L 1500 169L 0 169L 0 5.42364Z"/>
+<path id="path1_fill" d="M 119.494 0L 113.403 8.20742L 120.325 15.8586L 100.128 14.5871L 92.8791 8.20742L 101.399 0.301663L 119.494 0Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 11.0403 13.1785L 0 6.1887L 11.497 0L 11.3082 5.44797L 92.4576 8.33254L 100.637 0.742442L 100.953 0.449757L 101.38 0.442626L 119.475 0.140963L 121.78 0.102537L 120.395 1.96891L 115.661 8.34822L 118.087 8.34822L 118.087 10.6322L 115.965 10.6322L 121.156 16.37L 123.044 18.4569L 120.255 18.2812L 100.058 17.0097L 99.6772 16.9857L 99.3889 16.7319L 92.4408 10.6173L 11.2291 7.73056L 11.0403 13.1785ZM 95.8959 10.6322L 100.58 14.7541L 117.605 15.826L 112.907 10.6322L 95.8959 10.6322ZM 95.7789 8.34822L 101.845 2.71918L 117.207 2.46307L 112.84 8.34822L 95.7789 8.34822Z"/>
+<path id="path3_fill" d="M 0 3C 0 1.34315 1.34315 0 3 0L 13 0C 14.6569 0 16 1.34315 16 3L 16 412C 16 413.657 14.6569 415 13 415L 3 415C 1.34315 415 0 413.657 0 412L 0 3Z"/>
+<path id="path4_fill" d="M 27.8183 12.9348C 27.8183 17.9655 25.1968 22.424 21.1606 25.1825C 18.4776 27.0161 17.4878 25.7657 13.9092 25.7657C 10.3306 25.7657 9.34072 27.0161 6.65775 25.1825C 2.62157 22.424 0 17.9655 0 12.9348C 0 7.90409 0.303377 3.44557 4.33956 0.687086C 7.02253 -1.14657 10.3306 1.27031 13.9092 1.27031C 17.4878 1.27031 20.7958 -1.14657 23.4788 0.687086C 27.515 3.44557 27.8183 7.90409 27.8183 12.9348Z"/>
+<path id="path5_fill" d="M 3.27274 1.63637C 3.27274 2.54012 2.54012 3.27274 1.63637 3.27274C 0.732629 3.27274 0 2.54012 0 1.63637C 0 0.732629 0.732629 0 1.63637 0C 2.54012 0 3.27274 0.732629 3.27274 1.63637Z"/>
+<path id="path6_fill" d="M 6.54549 5.7273C 6.54549 8.89041 5.08023 11.4546 3.27274 11.4546C 1.46526 11.4546 0 8.89041 0 5.7273C 0 2.5642 3.27274 0 3.27274 0C 3.27274 0 6.54549 2.5642 6.54549 5.7273Z"/>
+<path id="path7_stroke" d="M -1.25454 525.728C 76.6792 644.632 167.757 706.247 261.308 722.853C 354.842 739.455 450.575 711.016 537.74 650.359C 712.029 529.075 852.45 278.751 873.521 0.11311L 870.53 -0.11311C 849.515 277.775 709.46 527.208 536.026 647.897C 449.33 708.227 354.39 736.328 261.832 719.899C 169.291 703.472 78.8576 642.483 1.25454 524.083L -1.25454 525.728Z"/>
+<path id="path8_fill" d="M 0 5.69178L 0 21.4022C 0 23.5346 0.206546 24.5758 1.25781 25.7024C 2.30907 26.8289 4.96345 26.8022 6.06444 25.7024C 7.16542 24.6026 7.00779 24.0085 7.00779 21.4022L 7.00779 5.69177C 7.00779 3.55934 6.95096 1.90374 5.5703 0.823961C 4.2673 -0.195081 2.48529 -0.351448 1.25781 0.823961C 0.0363256 1.99363 0 3.55937 0 5.69178Z"/>
+<path id="path9_fill" d="M 0 5.57606L 0 20.967C 0 23.0561 0.206546 24.0762 1.25781 25.1798C 2.30907 26.2834 4.96345 26.2572 6.06444 25.1798C 7.16542 24.1024 7.00779 23.5204 7.00779 20.967L 7.00779 5.57605C 7.00779 3.48697 6.95096 1.86504 5.5703 0.807209C 4.2673 -0.191114 2.48529 -0.344303 1.25781 0.807209C 0.0363256 1.9531 0 3.487 0 5.57606Z"/>
+<path id="path10_fill" d="M 0 5.69178L 0 21.4022C 0 23.5346 0.255379 24.5758 1.55519 25.7024C 2.85499 26.8289 6.13693 26.8022 7.49822 25.7024C 8.85951 24.6026 8.66461 24.0085 8.66461 21.4022L 8.66461 5.69177C 8.66461 3.55934 8.59434 1.90374 6.88725 0.823961C 5.27619 -0.195081 3.07287 -0.351448 1.55519 0.823961C 0.0449138 1.99363 0 3.55937 0 5.69178Z"/>
+<path id="path11_fill" d="M 0 5.57606L 0 20.967C 0 23.0561 0.260063 24.0762 1.58371 25.1798C 2.90736 26.2834 6.24949 26.2572 7.63575 25.1798C 9.02201 24.1024 8.82353 23.5204 8.82353 20.967L 8.82353 5.57605C 8.82353 3.48697 8.75198 1.86504 7.01358 0.807209C 5.37297 -0.191114 3.12923 -0.344303 1.58371 0.807209C 0.0457377 1.9531 0 3.487 0 5.57606Z"/>
+<path id="path12_fill" d="M -7.70853e-08 7.47172C -7.70853e-08 3.3452 3.0881 2.14574e-06 6.89747 2.14574e-06L 15.0882 2.14574e-06C 18.8976 2.14574e-06 21.9857 3.3452 21.9857 7.47172L 21.9857 8.63917C 21.9857 9.02603 21.6962 9.33965 21.3391 9.33965L 0.646638 9.33965C 0.28951 9.33965 -7.70853e-08 9.02603 -7.70853e-08 8.63917L -7.70853e-08 7.47172Z"/>
+<path id="path13_fill" d="M 0 2.70191C 0 1.20969 1.11112 0 2.48175 0L 14.146 0C 15.5166 0 16.6277 1.20969 16.6277 2.70191L 16.6277 4.86344L 0 4.86344L 0 2.70191Z"/>
+<path id="path14_fill" d="M 0 2.70191C 0 1.20969 1.11112 0 2.48175 0L 6.94891 0C 8.31954 0 9.43066 1.20969 9.43066 2.70191L 9.43066 4.86344L 0 4.86344L 0 2.70191Z"/>
+<path id="path15_fill" d="M 0 0L 16.6277 0L 16.6277 1.62116L 0 1.62116L 0 0Z"/>
+<path id="path16_fill" d="M 1.9854 11.913C 1.9854 7.13787 5.03764 0 7.94159 0L 17.3722 0C 20.7186 1.99463 23.3284 6.96876 23.3284 9.14885L 25.3138 31.8825C 25.3138 33.0763 24.4249 34.0441 23.3284 34.0441L 1.9854 34.0441C 0.888892 34.0441 0 33.0763 0 31.8825L 1.9854 11.913Z"/>
+<path id="path17_fill" d="M 0 2.70191C 0 1.20969 1.11112 0 2.48175 0L 6.94889 0C 8.31952 0 9.43063 1.20969 9.43063 2.70191L 9.43063 4.86344L 0 4.86344L 0 2.70191Z"/>
+<path id="path18_fill" d="M 0 2.70191C 0 1.20969 1.11112 0 2.48175 0L 14.146 0C 15.5166 0 16.6277 1.20969 16.6277 2.70191L 16.6277 4.86344L 0 4.86344L 0 2.70191Z"/>
+<path id="path19_fill" d="M 0 4.05199C 0 1.81414 1.66704 0 3.72345 0C 5.77985 0 7.4469 1.81414 7.4469 4.05199L 7.4469 5.47002C 7.4469 7.70787 5.77985 8.15227 3.72345 8.15227C 1.66704 8.15227 0 8.07099 0 6.75331L 0 4.05199Z"/>
+<path id="path20_fill" d="M 0 9.45464C 0 4.23299 3.88976 0 8.68803 0C 13.4863 0 17.3761 4.23299 17.3761 9.45464L 17.3761 14.317C 17.3761 19.5387 13.4863 23.7717 8.68803 23.7717C 3.88976 23.7717 0 19.5387 0 14.317L 0 9.45464Z"/>
+<path id="path21_fill" d="M 1.53641 3.33183C 1.98925 2.74672 1.32078 0.94808 0.566047 0L 0 4.0632C 0.566047 4.14446 1.08358 3.91693 1.53641 3.33183Z"/>
+<path id="path22_fill" d="M 0 9.45464L 0 14.317C 0 14.4983 0.00469058 14.6785 0.0139469 14.8573L 4.2199 14.8573L 4.2199 11.0754L 17.3761 11.0754L 17.3761 9.45464C 17.3761 4.23299 13.4863 0 8.68803 0C 3.88976 0 0 4.23299 0 9.45464Z"/>
+<path id="path23_fill" d="M 4.4681 2.43119C 4.4681 3.7739 3.46788 4.86239 2.23405 4.86239C 1.00022 4.86239 0 3.7739 0 2.43119C 0 1.08848 1.00022 0 2.23405 0C 3.46788 0 4.4681 1.08848 4.4681 2.43119Z"/>
+<path id="path24_fill" d="M 2.73055 1.48573C 2.73055 2.30627 2.11929 2.97146 1.36527 2.97146C 0.611254 2.97146 0 2.30627 0 1.48573C 0 0.665183 0.611254 0 1.36527 0C 2.11929 0 2.73055 0.665183 2.73055 1.48573Z"/>
+<path id="path25_fill" d="M 3.77573e-15 0L 0.27749 0C 0.890503 0 1.38745 0.300468 1.38745 0.671115L 1.38745 1.67779C 1.38745 2.04843 0.890503 2.3489 0.27749 2.3489L 0 2.3489L 3.77573e-15 0Z"/>
+<path id="path26_fill" d="M 0 0.810398C 0 0.362827 0.333407 0 0.744686 0L 2.73051 0C 3.14179 0 3.4752 0.362828 3.4752 0.810398L 3.4752 0.810398C 3.4752 1.25797 3.14179 1.6208 2.73051 1.6208L 0.744686 1.6208C 0.333407 1.6208 0 1.25797 0 0.810398L 0 0.810398Z"/>
+<path id="path27_fill" d="M 0.0930215 9.92317C 1.08286 10.9944 4.07489 13.5074 11.572 16.2036C 19.9688 19.2234 34.9795 18.0325 35.1797 16.8136C 35.3799 15.5947 27.3381 14.0015 27.3381 14.0015C 20.4407 12.204 30.4258 0.847193 29.2412 0.618012C 14.2573 -2.28089 11.7886 5.72899 8.48985 9.92317C 6.29069 10.2228 -0.896838 8.85193 0.0930215 9.92317Z"/>
+<path id="path28_fill" d="M 1.66735 13.8156C 0.517892 12.3918 -0.147696 4.04486 0.0279167 0C 2.29933 2.6744 5.62071 11.9213 5.47703 12.6764C 5.33334 13.4314 3.36734 14.9169 1.66735 13.8156Z"/>
+<path id="path29_stroke" d="M 0.730507 -0.0311444C 0.360888 2.9129 -0.0831969 7.43318 -0.212824 11.4104C -0.277551 13.3999 -0.263386 15.2656 -0.121791 16.7279C -0.0504922 17.4616 0.0555074 18.1097 0.198917 18.617C 0.341836 19.1211 0.53549 19.5411 0.813167 19.7861L 1.14395 19.4112C 0.978563 19.2653 0.816841 18.9635 0.679958 18.4806C 0.543567 18.0011 0.445341 17.3972 0.375873 16.6797C 0.235936 15.2396 0.22241 13.4062 0.286911 11.4267C 0.415739 7.46578 0.857787 2.9685 1.22661 0.0311444L 0.730507 -0.0311444Z"/>
+<path id="path30_stroke" d="M 1.37307 3.05824e-06C 1.37309 0.712096 1.01539 1.43621 0.64502 1.99221C 0.46086 2.26888 0.278224 2.49719 0.139141 2.65955C 0.0701139 2.74017 0.0133637 2.80263 -0.0270432 2.84595C -0.0470012 2.86735 -0.0623149 2.88337 -0.0730346 2.89446C -0.0782755 2.89988 -0.0821151 2.9038 -0.0848291 2.90656C -0.0861276 2.90788 -0.0870242 2.90879 -0.0876854 2.90946C -0.087987 2.90976 -0.0881709 2.90995 -0.0883232 2.9101C -0.088385 2.91016 -0.0884097 2.91019 -0.0884408 2.91022C -0.0884491 2.91023 -0.0884446 2.91022 -0.0884488 2.91023C -0.0884386 2.91022 -0.0884227 2.9102 0 2.99855C 0.0884227 3.08691 0.08845 3.08688 0.088483 3.08685C 0.0885016 3.08683 0.0885404 3.08679 0.0885776 3.08675C 0.0886376 3.08669 0.0887493 3.08658 0.088869 3.08646C 0.0890796 3.08625 0.0894386 3.08589 0.0898571 3.08547C 0.090636 3.08468 0.0918882 3.08341 0.0934243 3.08185C 0.0963794 3.07885 0.100952 3.07417 0.106684 3.06824C 0.117909 3.05663 0.134781 3.03898 0.155787 3.01646C 0.197308 2.97193 0.257597 2.90555 0.329018 2.82218C 0.470829 2.65657 0.662719 2.41636 0.853083 2.13081C 1.23176 1.56235 1.62309 0.787181 1.62307 -3.05824e-06L 1.37307 3.05824e-06Z"/>
+<path id="path31_stroke" d="M 0.47423 2.4466e-06C 0.47499 0.736011 0.328587 1.39237 0.180146 1.87484C 0.106506 2.11459 0.0336336 2.30587 -0.0218812 2.4401C -0.0493437 2.50655 -0.0717965 2.55708 -0.0878693 2.59212C -0.0957586 2.60932 -0.101738 2.62197 -0.105976 2.6308C -0.108022 2.63507 -0.109481 2.63807 -0.110541 2.64023C -0.111034 2.64124 -0.111354 2.64189 -0.111605 2.6424C -0.111712 2.64261 -0.111766 2.64272 -0.11182 2.64283C -0.111838 2.64287 -0.111838 2.64287 -0.111847 2.64288C -0.111847 2.64288 -0.111841 2.64287 -0.111841 2.64287C -0.111832 2.64285 -0.11182 2.64283 0 2.6987C 0.11182 2.75457 0.111836 2.75453 0.111854 2.7545C 0.111863 2.75448 0.111884 2.75444 0.111902 2.7544C 0.11193 2.75435 0.111984 2.75424 0.112039 2.75413C 0.11213 2.75395 0.112293 2.75362 0.112474 2.75325C 0.112798 2.75259 0.113338 2.7515 0.113979 2.75019C 0.115187 2.74772 0.117093 2.7438 0.119436 2.73892C 0.123976 2.72945 0.130871 2.71487 0.139368 2.69635C 0.156067 2.65993 0.180431 2.60505 0.209149 2.53563C 0.265994 2.39811 0.342935 2.19583 0.419106 1.94831C 0.570287 1.45625 0.723499 0.763266 0.72423 -2.4466e-06L 0.47423 2.4466e-06Z"/>
+<path id="path32_stroke" d="M -0.290498 0.406953C 1.131 1.42078 3.70086 2.86453 6.70928 3.86071C 9.71101 4.85054 13.2673 5.41389 16.599 4.68308L 16.3822 3.70686C 13.2376 4.41433 9.94782 3.87899 7.02292 2.91117C 4.10471 1.9497 1.66741 0.576823 0.290498 -0.406953L -0.290498 0.406953Z"/>
+<path id="path33_fill" d="M 28.9301 0L 32.3168 3.90579C 32.3168 3.90579 32.2299 4.37931 30.8173 5.10411C 28.9396 6.27153 27.3673 7.72499 25.1194 8.99867C 23.6602 9.82551 19.4269 12.1105 17.9221 12.8932C 13.7511 15.0303 10.9585 17.1686 7.45374 17.7021L 4.73701 16.6587C 3.47236 16.1195 0 15.7024 0 15.7024C 2.96939 14.468 14.983 7.88718 18.2371 6.16573C 21.8393 4.29564 25.9335 1.86389 28.9301 0Z"/>
+<path id="path34_fill" d="M 6.30956 1.12837C 6.62772 0.889214 6.26718 0.518264 6.0605 0.36701C 5.85381 0.215756 4.99964 0.0962269 4.65223 0.758493L 4.17578 1.73937L 3.24468 3.64769C 3.08735 4.03401 -0.122474 5.38912 0.00361894 5.62137C 0.033707 5.67679 2.59017 8.87629 2.59017 8.87629C 5.37168 7.67071 9.91108 5.90259 10.191 5.62137C 10.4705 5.34041 10.5289 5.00057 10.4419 4.79327C 10.2999 4.4547 10.2482 4.18198 9.68737 4.33413C 9.6851 4.33039 10.2657 3.83691 10.1385 3.42334C 10.0635 3.17913 9.8886 2.81827 9.30786 2.8301C 9.61031 2.61202 9.74932 2.39386 9.49148 1.8481C 9.26648 1.37208 9.01773 1.45179 8.70802 1.55277C 8.70802 1.55277 9.3179 0.941715 8.94718 0.329455C 8.86202 0.188826 8.75096 0.0591293 8.75096 0.0591293C 8.51983 -0.0146356 8.24838 -0.0755183 7.86437 0.240988C 7.5168 0.527065 6.30956 1.12837 6.30956 1.12837Z"/>
+<path id="path35_stroke" d="M 7.0093 -1.08667C 5.12402 2.82411 0.286917 11.16 -1.68972 23.5621C -3.63019 36.0175 -2.58383 52.4201 7.0014 72.6573L 11.5202 70.517C 2.35288 51.1622 1.46843 35.7716 3.25068 24.3317C 4.99677 12.8385 9.53591 5.17682 11.5123 1.08667L 7.0093 -1.08667Z"/>
+<path id="path36_fill" d="M 4.41978 0.0949895C 2.56656 -0.288801 0.323864 0.474756 0 2.67089L 0.18882 4.84905C 0.750861 5.69459 2.06405 6.86081 4.16733 8.87535C 6.22406 10.7798 10.2154 14.2814 10.5255 18.2014C 10.7037 20.4534 8.35641 23.8943 8.35641 23.8943C 8.5065 23.7917 8.19873 24.0165 8.35641 23.8943L 12.5839 26.6179C 12.5839 26.6179 16.8672 23.0659 16.3254 16.2168C 16.0026 12.1372 14.1519 8.99868 12.9408 7.2434C 11.7297 5.48812 10.2809 3.26987 9.06297 2.14209C 6.03975 -0.590382 4.41978 0.0949895 4.41978 0.0949895Z"/>
+<path id="path37_fill" d="M 1.31372 2.67229C 1.27673 2.27593 0.77228 2.3923 0.535347 2.49084C 0.298415 2.58938 -0.250485 3.25869 0.131286 3.89943L 0.716666 4.81582L 1.85336 6.60221C 2.09979 6.93718 2.31131 7.10297 2.7077 7.08219C 2.77061 7.08516 2.83406 7.08551 2.89855 7.08044C 3.61336 7.02631 4.57356 6.8335 5.27614 6.71247C 6.31656 6.53276 7.00621 6.14401 7.11911 5.35463C 7.54923 2.34834 7.26242 2.06384 7.16962 1.67841C 7.07682 1.2935 6.81816 1.06733 6.5962 1.03433C 6.23372 0.980362 5.97453 0.88326 5.81042 1.44229C 5.80605 1.44229 5.69 0.689407 5.27142 0.583923C 5.0243 0.521576 4.62564 0.484203 4.33168 0.987522C 4.30441 0.615534 4.19151 0.383434 3.59204 0.321261C 3.06913 0.267122 3.00674 0.521407 2.93054 0.838907C 2.93054 0.838907 2.72977 0 2.0146 0C 1.85033 0 1.68181 0.0278536 1.68181 0.0278536C 1.49803 0.187494 1.30411 0.388324 1.37244 0.881165C 1.43396 1.32703 1.31372 2.67229 1.31372 2.67229Z"/>
+<path id="path38_fill" d="M 0 2.77591C 0 1.24282 1.14556 0 2.55869 0L 5.59713 0C 7.01025 0 8.15581 1.24282 8.15581 2.77591L 8.058 10.7278C 8.058 11.1111 7.86942 10.9301 7.51614 10.9301L 0.639672 10.9301C 0.286391 10.9301 0 10.6194 0 10.2362L 0 2.77591Z"/>
+<path id="path39_fill" d="M 4.94636 8.75856C 3.5944 7.17082 0.747421 2.92594 0 0.636353L 2.82359 0C 2.79591 0.299698 3.10817 1.29075 3.82366 2.61368C 4.94636 4.68952 6.32815 5.64723 7.62357 7.74738C 12.962 16.7329 21.2751 40.1348 11.8195 61.8576C 10.4077 65.048 4.35397 77.0831 3.9032 78.3715C 3.71041 78.9226 3.53547 81.5298 3.53547 82.7613L 0.498281 82.7613C 0 78.2572 1.62553 75.2927 2.40836 74.1302C 19.9043 48.8926 11.3904 20.0334 4.94636 8.75856Z"/>
+<path id="path40_fill" d="M 4.46893 0.129976C 3.15402 -0.35694 1.17208 0.645991 1.16479 1.13372C 1.1575 1.62145 5.30297 28.761 0 37.1342L 3.42911 38.2465C 8.81635 27.7103 7.75059 6.35835 4.46893 0.129976Z"/>
+<path id="path41_fill" d="M 0.171473 0C -0.127508 0.842202 0.0154051 2.60682 0.214724 3.30865L 3.3241 3.30865L 3.44369 0L 0.171473 0Z"/>
+<path id="path42_fill" d="M 0.265345 3.25542C 0.0854731 4.96748 -0.107811 5.30891 0.0714002 5.86112L 2.79411 5.50394L 1.06124 0L 0.265345 3.25542Z"/>
+<path id="path43_fill" d="M 0.250983 2.36795L 0 0L 1.67526 1.50433L 1.67526 5.11905C 1.67526 5.53798 1.33565 5.8776 0.916713 5.8776L 0.916713 5.8776C 0.487704 5.8776 0.144064 5.52211 0.158598 5.09335L 0.250983 2.36795Z"/>
+</defs>
+</svg>
