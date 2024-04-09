@@ -5,6 +5,7 @@
     - Theories
         - [Information Theory](computer_science/theories/information_theory.md)
 - Physics
+    - [Qubit](qubit.md)
     - Kinematics
         - [Fundamentals](physics/kinematics/kinematics/main.md)
         - [Projectile Motion](physics/kinematics/projectile_motion/main.md)
@@ -30,5 +31,8 @@
             - [Extraversion vs Introversion](psychology/typology/the_dichotomies/extraversion_vs_introversion.md)
             - [Thinking vs Feeling](psychology/typology/the_dichotomies/thinking_vs_feeling.md)
             - [Sensation vs Intuition](psychology/typology/the_dichotomies/sensation_vs_intuition.md)
+        - The 16 Types
+            - [INTJ](psychology/typology/mbti/intj.md)
+            - [INTP](psychology/typology/mbti/intp.md)
     - Books
         - [The Laws of Human Nature](psychology/books/law_of_human_nature.md)
