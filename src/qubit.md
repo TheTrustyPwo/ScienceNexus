@@ -48,7 +48,25 @@ In quantum mechanics, the promotion of classical variables to operators is a fun
 
 Another effect of promoting variables to operators is quantization. Classical variables take continuous values, whereas in quantum mechanics, observables are quantized, meaning they can only take on discrete values. By promoting classical variables to operators, we introduce the concept of quantization, where the eigenvalues of these operators correspond to the possible outcomes of measurements.
 
-For example, $\hat{x} = x$ and $\hat{p} = -i\hbar\frac{\partial}{\partial x}$. They have a canonical commutation relation and obey the uncertainty principle, since $[\hat{x}, \hat{p}] = -i\hbar$.
+### Poisson Brackets
+
+Poisson brackets are used to describe the evolution of classical mechanical systems. They are particularly useful in Hamiltonian mechanics, where they provide a concise and powerful notation for expressing the equations of motion of a system. Given two dynamical variables $f(q, p)$ and $g(q, p)$ (where $q$ represents generalized coordinates and $p$ represents generalized momenta), the Poisson bracket of $f$ and $g$ is defined as:
+
+$$ \{f, g\} = \frac{\partial f}{\partial q} \frac{\partial g}{\partial p} - \frac{\partial f}{\partial p} \frac{\partial g}{\partial q} $$
+
+Intuitively, the Poisson bracket measures how the variables change with respect to each other as the system evolves in time. It quantifies the rate of change of one variable with respect to the other.
+
+### Commutators
+
+In quantum mechanics, commutators serve a similar purpose to Poisson brackets in classical mechanics. The commutator of two operators $A$ and $B$ is defined as:
+
+$$ [\hat{A}, \hat{B}] = \hat{A}\hat{B} - \hat{B}{A} $$ 
+
+Just like Poisson brackets, commutators measure how the operators "fail to commute" with each other. They quantify the non-commutativity of operators, which is a fundamental aspect of quantum mechanics.
+
+For example, $\hat{x} = x$ and $\hat{p} = -i\hbar\frac{\partial}{\partial x}$. They have a canonical commutation relation and obey the uncertainty principle, since $[\hat{x}, \hat{p}] = i\hbar$.
+
+### Hermitian
 
 Hermitian operators, in particular, play a crucial role in the context of observable quantities. A hermitian operator is an operator to its own adjoint (complex conjugate tranpose). $\hat{A} = \hat{A}^\dagger$.
 
@@ -57,3 +75,22 @@ Classical observerables must be hermitian operators in quantum mechanics, becaus
 $$ \left\langle \hat{A} \right\rangle = \left\langle \psi \right\vert \hat{A} \left\vert \psi \right\rangle $$
 
 For the expectation value to be real, $\hat{A}$ must be hermitian. This also implies that hermitian operators have real eigenvalues. In the context of quantum mechanics, the eigenvalues of an observable operator correspond to the possible outcomes of measurements. The requirement for real eigenvalues aligns with the fact that measurement outcomes are real numbers.
+
+The hamiltonian for the LC circuit thus becomes:
+
+$$ \hat{\mathcal{H}} = \frac{\hat{Q}^2}{2C} + \frac{\hat{\Phi}^2}{2L} $$
+
+## Ladder & Number Operators
+
+Ladder operators enable transitions between **fixed** energy levels of the harmonic oscillator. Applying the ladder operators to an eigenstate of the Hamiltonian changes the energy level by a fixed amount. $\hat{A}$ is the lowering or annihilation operator, and $\hat{A}^\dagger$ is the raising or creation operator. They are not hermitian operators and hence are not observerables. In position and momentum space, they are defined as:
+
+$$ \hat{A} = \sqrt{\frac{m\omega}{2\hbar}} \left(\hat{x} + i\frac{\hat{p}}{m\omega}\right) $$
+$$ \hat{A}^\dagger = \sqrt{\frac{m\omega}{2\hbar}} \left(\hat{x} - i\frac{\hat{p}}{m\omega}\right) $$
+
+Their commutation relation is rather simple: $[\hat{A}, \hat{A}^\dagger] = 1$. This is an extremely useful identity.
+
+The number operator, denoted as $\hat{N}$, measures the number of quanta, or excitations, in the harmonic oscillator. Its eigenvalues represent the possible energy levels of the system, and its eigenvectors are the corresponding energy eigenstates. It is defined as:
+
+$$ \hat{N} = \hat{A}^\dagger \hat{A} $$
+
+We can see that the number operator is hermitian as $\hat{N}^\dagger = (\hat{A}^\dagger \hat{A})^\dagger = \hat{A}^\dagger \hat{A} = \hat{N}$.
