@@ -111,8 +111,6 @@ By applying the JW transform to the second quantized Hamiltonian (equation 17), 
 
 This mapping is a crucial step in performing quantum simulations of molecular systems on quantum computers using algorithms like the Variational Quantum Eigensolver (VQE).
 
-Sure, let's continue and explain equations 20, 21, and how we can use a quantum computer to simulate molecular systems using the Variational Quantum Eigensolver (VQE) algorithm.
-
 ### Slater Determinant
 
 In computational physics and quantum chemistry, the wavefunction of a many-electron system is often expressed as a Slater determinant:
