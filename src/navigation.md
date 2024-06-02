@@ -6,6 +6,7 @@
         - [Information Theory](computer_science/theories/information_theory.md)
 - Physics
     - [Qubit](qubit.md)
+    - [VQE](vqe.md)
     - Kinematics
         - [Fundamentals](physics/kinematics/kinematics/main.md)
         - [Projectile Motion](physics/kinematics/projectile_motion/main.md)
