@@ -1,0 +1,1997 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="qubit.html">
+      
+      
+        <link rel="next" href="physics/kinematics/kinematics/main.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>VQE - Science Nexus</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vqe" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Science Nexus" class="md-header__button md-logo" aria-label="Science Nexus" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Science Nexus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VQE
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheTrustyPwo/ScienceNexus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="computer_science/theories/information_theory.html" class="md-tabs__link">
+          
+  
+  Computer Science
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="qubit.html" class="md-tabs__link">
+          
+  
+  Physics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="psychology/typology/the_dichotomies/extraversion_vs_introversion.html" class="md-tabs__link">
+          
+  
+  Psychology
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Science Nexus" class="md-nav__button md-logo" aria-label="Science Nexus" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Science Nexus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheTrustyPwo/ScienceNexus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="navigation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Science
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Science
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Theories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Theories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="computer_science/theories/information_theory.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Information Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="qubit.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qubit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VQE
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="vqe.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    VQE
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hamiltonian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hamiltonian
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hamiltonian">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinetic-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kinetic Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplified-molecular-hamiltonian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplified Molecular Hamiltonian
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-quantization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Second Quantization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Quantization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spin-orbital-basis-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spin-Orbital Basis Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-electron-part" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Electron Part
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-electron-part" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Electron Part
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-molecular-hamiltonian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Molecular Hamiltonian
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapping
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jordan-wigner-transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jordan-Wigner Transform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slater-determinant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slater Determinant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#occupation-number-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Occupation Number Representation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solving
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Kinematics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Kinematics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/kinematics/kinematics/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/kinematics/projectile_motion/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projectile Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Astrophysics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Astrophysics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/introduction.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/fundamentals/matter/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/fundamentals/gravity/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gravity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/fundamentals/radiation/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Relativity
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Relativity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/relativity/special_relativity/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Relativity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/astrophysics/relativity/general_relativity/main.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General Relativity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/quantum_physics/introduction.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantization of Energy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quantization of Energy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/quantum_physics/quantization/black_body_radiation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Black Body Radiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/quantum_physics/quantization/bohr_model.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bohr's Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wave-Particle Duality
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wave-Particle Duality
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="physics/quantum_physics/duality/young_experiment.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Young's Experiment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Psychology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Psychology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Typology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Typology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1" id="__nav_4_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Dichotomies
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            The Dichotomies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/typology/the_dichotomies/extraversion_vs_introversion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extraversion vs Introversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/typology/the_dichotomies/thinking_vs_feeling.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thinking vs Feeling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/typology/the_dichotomies/sensation_vs_intuition.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensation vs Intuition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The 16 Types
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            The 16 Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/typology/mbti/intj.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INTJ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/typology/mbti/intp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Books
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Books
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="psychology/books/law_of_human_nature.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Laws of Human Nature
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="vqe">VQE</h1>
+<h2 id="hamiltonian">Hamiltonian</h2>
+<h3 id="potential-energy">Potential Energy</h3>
+<p>The potential energy of a system of electrons and nuclei arises from the electrostatic interactions between the charged particles. There are 3 components, electron-electron repulsion, nuclear-nuclear repulsion, and electron-nuclear attraction. Coulomb's law <span class="arithmatex">$V = \frac{q_1q_2}{4\pi\epsilon_0 r}$</span> can be used to calculate their potential energy:</p>
+<div class="arithmatex">$$ \hat{V} = \underbrace{\sum_{i,j}^{\text{electrons}} \frac{e^2}{4\pi\epsilon_0 |r_i - r_j|}}_{\text{electron-electron repulsion}} + \underbrace{\sum_{i,j}^{\text{nuclei}} \frac{Z_i Z_j e^2}{4\pi\epsilon_0 |R_i - R_j|}}_{\text{nuclear-nuclear repulsion}} - \underbrace{\sum_{i}^{\text{electrons}} \sum_{j}^{\text{nuclei}} \frac{Z_j e^2}{4\pi\epsilon_0 |r_i - R_j|}}_{\text{electron-nuclear attraction}} $$</div>
+<h3 id="kinetic-energy">Kinetic Energy</h3>
+<p>Since classically, <span class="arithmatex">$T_x = \frac{P_x^2}{2m}$</span>, and the quantum momentum operator <span class="arithmatex">$\hat{P}_x = -i\hbar\frac{\partial}{\partial x}$</span>, so</p>
+<div class="arithmatex">$$ \hat{T}_x = \frac{\hat{P}_x^2}{2m} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} $$</div>
+<p>If the particle is moving in 3 dimensions, then <span class="arithmatex">$P = \vec{x}P_x + \vec{y}P_y + \vec{z}P_z$</span> and the total momentum operator would be</p>
+<div class="arithmatex">$$ \hat{P} = -i\hbar(\vec{x}\frac{\partial}{\partial x} + \vec{y}\frac{\partial}{\partial y} + \vec{z}\frac{\partial}{\partial z}) = -i\hbar\nabla$$</div>
+<div class="arithmatex">$$ \therefore \hat{T} = -\frac{\hbar^2}{2m} \nabla^2 $$</div>
+<p>The kinetic energy of the system is divided into kinetic energy of the nuclei and the electrons.</p>
+<div class="arithmatex">$$ \hat{T} = -\sum_{i}^{\text{nuclei}} \frac{\hbar^2}{2m_i} \nabla_i^2 - \sum_{i}^{\text{electrons}} \frac{\hbar^2}{2m_e} \nabla_i^2 $$</div>
+<h3 id="simplified-molecular-hamiltonian">Simplified Molecular Hamiltonian</h3>
+<p>Several approximations are made to simplify the molecular Hamiltonian:</p>
+<div class="arithmatex">$$ \hat{H} \approx -\sum_{i}^{\text{electrons}} \frac{1}{2} \nabla_i^2 + \sum_{i,j}^{\text{electrons}} \frac{1}{|r_i - r_j|} - \sum_{i}^{\text{electrons}} \sum_{j}^{\text{nuclei}} \frac{Z_j}{|r_i - R_j|} + C'_n $$</div>
+<ol>
+<li>
+<p><strong>Born-Oppenheimer Approximation</strong>: This approximation assumes that the nuclei are much heavier than the electrons and can be treated as fixed in space. This allows separating the electronic and nuclear motions, effectively removing the kinetic energy term for the nuclei.</p>
+</li>
+<li>
+<p><strong>Atomic Units</strong>: By using a system of units where certain fundamental constants (such as the Planck constant <span class="arithmatex">$\hbar$</span>, the electron mass <span class="arithmatex">$m_e$</span>, and the electron charge <span class="arithmatex">$e$</span>) are set to 1, the equations can be simplified.</p>
+</li>
+<li>
+<p><strong>Constant Term</strong>: The term <span class="arithmatex">$C'_n$</span> is a constant that accounts for the nuclear-nuclear repulsion energy, as the positions of the nuclei are considered fixed in this approximation.</p>
+</li>
+</ol>
+<p>The simplified Hamiltonian includes the electronic kinetic energy term, the electron-electron repulsion term, and the electron-nuclear attraction term.</p>
+<h2 id="second-quantization">Second Quantization</h2>
+<h3 id="spin-orbital-basis-functions">Spin-Orbital Basis Functions</h3>
+<p>In quantum chemistry, wavefunctions are often represented using spin-orbital basis functions, which are products of spatial orbitals and spin functions. These basis functions are used to construct the many-electron wavefunction as a linear combination.</p>
+<p>Spin-orbital basis functions are typically denoted as <span class="arithmatex">$\psi_p$</span>, <span class="arithmatex">$\psi_q$</span>, <span class="arithmatex">$\psi_r$</span>, <span class="arithmatex">$\psi_s$</span>, and so on. Each spin-orbital function is a product of a spatial orbital <span class="arithmatex">$\phi_p(r)$</span> and a spin function <span class="arithmatex">$\alpha(\omega)$</span> or <span class="arithmatex">$\beta(\omega)$</span>, representing the spin up or spin down state, respectively:</p>
+<div class="arithmatex">$$\psi_p(x) = \phi_p(r) \alpha(\omega)$$
+$$\psi_q(x) = \phi_q(r) \beta(\omega)$$</div>
+<p>The spatial orbitals <span class="arithmatex">$\phi_p(r)$</span> and <span class="arithmatex">$\phi_q(r)$</span> are typically constructed as linear combinations of atomic orbitals (LCAO) centered on the nuclei. Common basis sets used in quantum chemistry include Slater-type orbitals (STOs) and Gaussian-type orbitals (GTOs).</p>
+<p>These spin-orbital basis functions form the basis set in which the molecular orbitals and Hamiltonian are represented.</p>
+<h3 id="one-electron-part">One-Electron Part</h3>
+<p>In quantum chemistry, it is often convenient to express the Hamiltonian and wavefunctions in a second quantized form, which involves creation and annihilation operators acting on spin-orbital basis functions.</p>
+<p>In this equation:</p>
+<div class="arithmatex">$$ \sum_i h_1(x_i) = \sum_{p,q} \langle p | \hat{h}_1 | q \rangle a^\dagger_p a_q $$</div>
+<ul>
+<li><span class="arithmatex">$a^\dagger_p$</span> and <span class="arithmatex">$a_q$</span> are the creation and annihilation operators, respectively, which create or annihilate an electron in the spin-orbital basis function <span class="arithmatex">$ψ_p$</span> or <span class="arithmatex">$ψ_q$</span>.</li>
+<li><span class="arithmatex">$h_{pq} = \langle p | \hat{h}_1 | q \rangle$</span> represents the one-electron integrals, obtained by integrating the one-electron part of the Hamiltonian (<span class="arithmatex">$\hat{h}_1$</span>) over the spin-orbital basis functions <span class="arithmatex">$ψ_p$</span> and <span class="arithmatex">$ψ_q$</span>.</li>
+</ul>
+<p>This second quantized form provides a compact way to represent the one-electron part of the Hamiltonian, including both the kinetic energy and the electron-nuclear attraction terms, in terms of creation and annihilation operators acting on the spin-orbital basis.</p>
+<p>By expressing the Hamiltonian in this form, it becomes easier to perform calculations and manipulations using the tools of second quantization, which are particularly useful in quantum chemistry and condensed matter physics.</p>
+<h3 id="two-electron-part">Two-Electron Part</h3>
+<p>Building on equation 15, which represents the one-electron part of the Hamiltonian in second quantized form, equation 16 introduces the two-electron part:</p>
+<div class="arithmatex">$$\sum_{i,j} h_2(x_i, x_j) = \sum_{p,q,r,s} \langle pq | \hat{H} | rs \rangle a^\dagger_p a^\dagger_q a_r a_s$$</div>
+<p>Here, the two-electron integrals <span class="arithmatex">$\langle pq | \hat{H} | rs \rangle$</span> represent the electron-electron repulsion term, integrated over the spin-orbital basis functions <span class="arithmatex">$\psi_p$</span>, <span class="arithmatex">$\psi_q$</span>, <span class="arithmatex">$\psi_r$</span>, and <span class="arithmatex">$\psi_s$</span>.</p>
+<p>The creation and annihilation operators <span class="arithmatex">$a^\dagger_p$</span>, <span class="arithmatex">$a^\dagger_q$</span>, <span class="arithmatex">$a_r$</span>, and <span class="arithmatex">$a_s$</span> act on the spin-orbital basis functions to create or annihilate electrons in the corresponding orbitals.</p>
+<p>This equation captures the contribution of the electron-electron repulsion term to the Hamiltonian in the second quantized form, allowing for efficient calculations and manipulations.</p>
+<h3 id="full-molecular-hamiltonian">Full Molecular Hamiltonian</h3>
+<p>Equation 17 combines the one-electron and two-electron parts from equations 15 and 16, along with a constant term <span class="arithmatex">$h_0$</span>, to give the full molecular Hamiltonian in second quantized form:</p>
+<div class="arithmatex">$$\hat{H} = \sum_{p,q} h_{pq} a^\dagger_p a_q + \frac{1}{2} \sum_{p,q,r,s} h_{pqrs} a^\dagger_p a^\dagger_q a_r a_s + h_0$$</div>
+<p>The first term represents the one-electron part, the second term represents the two-electron part, and <span class="arithmatex">$h_0$</span> is a constant shift factor that accounts for the nuclear-nuclear repulsion energy and any other constant shift needed to align with the desired reference energy.</p>
+<p>This equation provides a compact representation of the full molecular Hamiltonian in second quantized form, expressed in terms of creation and annihilation operators acting on the spin-orbital basis functions.</p>
+<h2 id="mapping">Mapping</h2>
+<h3 id="jordan-wigner-transform">Jordan-Wigner Transform</h3>
+<p>The Jordan-Wigner (JW) transform is a mathematical technique used to map the fermionic creation and annihilation operators in second quantization onto a system of spin operators, enabling their representation on a quantum computer using qubit states.</p>
+<p>The JW transform maps the fermionic operators as follows:</p>
+<div class="arithmatex">$$a^\dagger_n \rightarrow \frac{1}{2} \left(\prod_{j=0}^{n-1} -Z_j\right) (X_n - iY_n)$$
+$$a_n \rightarrow \frac{1}{2} \left(\prod_{j=0}^{n-1} -Z_j\right) (X_n + iY_n)$$</div>
+<p>Here, <span class="arithmatex">$X_n$</span>, <span class="arithmatex">$Y_n$</span>, and <span class="arithmatex">$Z_n$</span> are the Pauli spin operators acting on the n-th qubit, and the product <span class="arithmatex">$\prod_{j=0}^{n-1} -Z_j$</span> introduces a phase factor to account for the fermionic anti-commutation relations.</p>
+<p>The JW transform provides a way to map the fermionic operators onto a system of qubits, enabling the simulation of fermionic systems, such as molecules, on a quantum computer. However, it has some limitations, such as the non-local nature of the operator representations, which can limit scalability for larger systems.</p>
+<p>By applying the JW transform to the second quantized Hamiltonian (equation 17), the molecular Hamiltonian can be expressed as a linear combination of tensor products of Pauli operators acting on the qubit states, as shown in equation 22 of the paper for the hydrogen molecule example.</p>
+<p>This mapping is a crucial step in performing quantum simulations of molecular systems on quantum computers using algorithms like the Variational Quantum Eigensolver (VQE).</p>
+<h3 id="slater-determinant">Slater Determinant</h3>
+<p>The slater determinant is a way to construct an antisymmetric many-particle wavefunction that satisfies the requirements of fermi-dirac statistics. This ensures that the wavefunction is antisymmetric with respect to the interchange of any two fermionic particles, such as electrons, which are indistinguishable from each other. Essentially, the wave function must simply change sign when any two electrons are swapped.</p>
+<p>Let's first consider a single-particle wavefunction <span class="arithmatex">$\psi_x$</span>, which depends on the spatial coordinates x. for a system with n indistinguishable particles, we need to construct an n-particle wavefunction <span class="arithmatex">$\Psi(x_1, x_2, \ldots, x_n)$</span> that is antisymmetric with respect to the interchange of any two particles. We can construct such an antisymmetric n-particle wavefunction by taking the determinant of an n x n matrix, whose entries are the single-particle wavefunctions:</p>
+<div class="arithmatex">$$ \Psi(x_1, x_2, \ldots, x_n) = \det \begin{bmatrix} \psi(x_1) &amp; \psi(x_2) &amp; \cdots &amp; \psi(x_n) \end{bmatrix} $$</div>
+<p>The key property of the determinant that ensures antisymmetry is that it changes sign when any two rows (or columns) are interchanged. Mathematically, for any n x n matrix <span class="arithmatex">$A$</span>:</p>
+<div class="arithmatex">$$ det(A) = -det(A') $$</div>
+<p>where <span class="arithmatex">$A'$</span> is the matrix obtained by interchanging any two rows (or columns) of <span class="arithmatex">$A$</span>.</p>
+<p>Now, let's consider the Slater determinant for an n-fermion system:</p>
+<div class="arithmatex">$$\psi(x_1, x_2, \dots, x_n) = \frac{1}{\sqrt{N!}} \begin{vmatrix}
+\chi_i(x_1) &amp; \chi_j(x_1) &amp; \dots &amp; \chi_k(x_1) \\
+\chi_i(x_2) &amp; \chi_j(x_2) &amp; \dots &amp; \chi_k(x_2) \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\chi_i(x_n) &amp; \chi_j(x_n) &amp; \dots &amp; \chi_k(x_n)
+\end{vmatrix}$$</div>
+<p>Here, <span class="arithmatex">$\chi_m(x_l)$</span> represents the the molecular orbital wavefunctions, for the <span class="arithmatex">$m$</span>th orbital of the <span class="arithmatex">$l$</span>th electron. The <span class="arithmatex">$1/\sqrt{N!}$</span> factor is a normalization constant.</p>
+<p>If we interchange the coordinates of two particles, say <span class="arithmatex">$x_1$</span> and <span class="arithmatex">$x_2$</span>, it corresponds to interchanging two rows of the matrix. According to the property of determinants mentioned above, this operation changes the sign of the determinant:</p>
+<div class="arithmatex">$$\Psi(x_2, x_1, x_3, \dots, x_n) = -\Psi(x_1, x_2, x_3, \dots, x_n)$$</div>
+<p>This sign change satisfies the antisymmetry principle for fermions, which states that the many-particle wavefunction must change sign when any two particles are interchanged.</p>
+<h3 id="occupation-number-representation">Occupation Number Representation</h3>
+<p>In the occupation number representation, we specify the many-fermion wavefunction by indicating the occupation of each single-particle state (spin-orbital) by either 0 (unoccupied) or 1 (occupied).
+For a system with n fermions and m spin-orbitals <span class="arithmatex">${\phi_1, \phi_2, \dots, \phi_m}$</span>, the occupation number representation is:</p>
+<div class="arithmatex">$$|\Psi\rangle = \sum_{i} C_i |n_1^i n_2^i \dots n_m^i\rangle$$</div>
+<p>Here, <span class="arithmatex">$|n_1^i n_2^i \dots n_m^i\rangle$</span> represents a specific configuration where <span class="arithmatex">$n_j^i$</span> is either 0 or 1, indicating whether the j-th spin-orbital is occupied or unoccupied in the i-th configuration. The coefficients <span class="arithmatex">$C_i$</span> are the amplitudes of each configuration in the overall wavefunction.</p>
+<p>The occupation number representation provides a compact way to express the many-fermion wavefunction as a linear combination of Slater determinants, where each configuration represents a specific occupation pattern of the spin-orbitals, automatically satisfying the antisymmetry principle.</p>
+<p>This representation is particularly useful for computational purposes, as it allows us to work with the occupation numbers directly, rather than dealing with the explicit form of the Slater determinants, which can become increasingly complex for larger systems.</p>
+<h2 id="solving">Solving</h2>
+<p>Sure, let me explain in detail how the Variational Quantum Eigensolver (VQE), Unitary Coupled Cluster Singles and Doubles (UCCSD), and the Hartree-Fock (HF) method are used to solve the problem of finding the ground-state energy of a molecular system, such as the hydrogen molecule.</p>
+<p><strong>Hartree-Fock Method</strong></p>
+<p>The Hartree-Fock (HF) method is a mean-field approximation used in quantum chemistry to obtain an initial estimate of the many-electron wavefunction and energy for a molecular system. It is a crucial starting point for more advanced methods like VQE and UCCSD.</p>
+<p>In the HF method, the many-electron wavefunction is approximated as a single Slater determinant constructed from a set of spin-orbitals. The HF equations are solved iteratively to find the optimal set of spin-orbitals that minimize the energy of this Slater determinant, subject to the constraint of being an antisymmetric product of single-particle wavefunctions.</p>
+<p>The HF method provides a good initial approximation to the ground-state wavefunction and energy, but it does not account for the instantaneous electron-electron interactions (correlation effects) beyond a mean-field treatment.</p>
+<p>In the context of the VQE algorithm, the HF method is often used to generate an initial guess for the wavefunction, which is then refined by the variational optimization procedure.</p>
+<p><strong>Unitary Coupled Cluster Singles and Doubles (UCCSD)</strong></p>
+<p>UCCSD is a specific form of the Ansatz (trial wavefunction) used in the VQE algorithm. It is based on the coupled cluster (CC) method, which is a widely used technique in quantum chemistry for including electron correlation effects beyond the HF approximation.</p>
+<p>The UCCSD Ansatz is defined as:</p>
+<div class="arithmatex">$$|\Psi_{\text{UCCSD}}(\vec{\theta})\rangle = e^{\hat{T}(\vec{\theta})} |\Phi_0\rangle$$</div>
+<p>Where <span class="arithmatex">$|\Phi_0\rangle$</span> is the HF reference wavefunction (a single Slater determinant), and <span class="arithmatex">$\hat{T}(\vec{\theta})$</span> is the cluster operator, which is a sum of excitation operators that generate singly and doubly excited Slater determinants from the reference:</p>
+<div class="arithmatex">$$\hat{T}(\vec{\theta}) = \hat{T}_1(\vec{\theta}) + \hat{T}_2(\vec{\theta})$$</div>
+<p>The excitation operators <span class="arithmatex">$\hat{T}_1$</span> and <span class="arithmatex">$\hat{T}_2$</span> are parameterized by the variational parameters <span class="arithmatex">$\vec{\theta}$</span>, which are optimized during the VQE procedure.</p>
+<p>The UCCSD Ansatz is a compact and efficient way to capture essential electron correlation effects, making it a popular choice for the VQE algorithm in quantum chemistry applications.</p>
+<p><strong>Variational Quantum Eigensolver (VQE)</strong></p>
+<p>The VQE algorithm is a hybrid quantum-classical algorithm that leverages both quantum and classical resources to find the ground-state energy and wavefunction of a molecular system.</p>
+<p>The key steps in the VQE algorithm are:</p>
+<ol>
+<li>
+<p><strong>Prepare the Ansatz Wavefunction</strong>: An initial trial wavefunction, called the Ansatz, is prepared on a quantum computer. This Ansatz is a parameterized quantum circuit, often based on a form like UCCSD, acting on the qubit register.</p>
+</li>
+<li>
+<p><strong>Encode the Molecular Hamiltonian</strong>: The molecular Hamiltonian, expressed as a linear combination of Pauli operators (e.g., equation 22 for the hydrogen molecule), is encoded onto the quantum computer using appropriate quantum gates.</p>
+</li>
+<li>
+<p><strong>Measure the Energy Expectation Value</strong>: The quantum computer is used to measure the expectation value of the Hamiltonian with respect to the current Ansatz wavefunction: <span class="arithmatex">$\langle\Psi(\vec{\theta})|\hat{H}|\Psi(\vec{\theta})\rangle$</span>, where <span class="arithmatex">$\vec{\theta}$</span> represents the parameters of the Ansatz circuit.</p>
+</li>
+<li>
+<p><strong>Classical Optimization</strong>: A classical optimization algorithm, such as the L-BFGS algorithm used in the paper, is employed to iteratively update the parameters <span class="arithmatex">$\vec{\theta}$</span> of the Ansatz circuit, minimizing the energy expectation value measured on the quantum computer. This step is repeated until convergence is achieved.</p>
+</li>
+</ol>
+<p>The VQE algorithm starts with an initial guess for the wavefunction, typically obtained from the HF method, and then iteratively refines it by optimizing the Ansatz parameters to minimize the energy expectation value. The UCCSD form is often used as the Ansatz due to its ability to capture essential electron correlation effects.</p>
+<p>By combining the computational power of quantum computers with classical optimization techniques, the VQE algorithm can approximate the ground-state energy and wavefunction of molecular systems with high accuracy, provided that the Ansatz circuit is expressive enough and the quantum hardware has sufficiently low noise and error rates.</p>
+<p>In summary, the HF method provides an initial guess for the wavefunction, the UCCSD form is used as the parameterized Ansatz circuit, and the VQE algorithm iteratively optimizes the Ansatz parameters to find the ground-state energy and wavefunction of the molecular system, leveraging both quantum and classical resources.</p>
+
+
+
+
+
+
+
+
+  <aside class="md-source-file">
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:shucecai@gmail.com">TheTrustyPwo</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Text is available under the <a href="https://github.com/TheTrustyPwo/ScienceNexus/blob/master/LICENSE.txt">GNU General Public License v3.0</a> License<br/>Copyright &copy; 2023 by <a href="https://github.com/TheTrustyPwo">https://github.com/TheTrustyPwo</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs", "toc.integrate", "search.suggest"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="javascript/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

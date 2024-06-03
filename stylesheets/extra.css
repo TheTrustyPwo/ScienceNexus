@@ -1,0 +1,4 @@
+/* Visually hide latex code */
+.mjx-copytext {
+    font-size: 0;
+}
