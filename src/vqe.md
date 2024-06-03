@@ -38,8 +38,6 @@ $$ \hat{H} \approx -\sum_{i}^{\text{electrons}} \frac{1}{2} \nabla_i^2 + \sum_{i
 
 The simplified Hamiltonian includes the electronic kinetic energy term, the electron-electron repulsion term, and the electron-nuclear attraction term.
 
-Sure, let me first explain spin-orbital basis functions, and then continue with equations 16, 17, and the Jordan-Wigner transform (equation 18).
-
 ## Second Quantization
 
 ### Spin-Orbital Basis Functions
@@ -92,7 +90,7 @@ The first term represents the one-electron part, the second term represents the 
 
 This equation provides a compact representation of the full molecular Hamiltonian in second quantized form, expressed in terms of creation and annihilation operators acting on the spin-orbital basis functions.
 
-## Simulation
+## Mapping
 
 ### Jordan-Wigner Transform
 
@@ -113,7 +111,19 @@ This mapping is a crucial step in performing quantum simulations of molecular sy
 
 ### Slater Determinant
 
-In computational physics and quantum chemistry, the wavefunction of a many-electron system is often expressed as a Slater determinant:
+The slater determinant is a way to construct an antisymmetric many-particle wavefunction that satisfies the requirements of fermi-dirac statistics. This ensures that the wavefunction is antisymmetric with respect to the interchange of any two fermionic particles, such as electrons, which are indistinguishable from each other. Essentially, the wave function must simply change sign when any two electrons are swapped.
+
+Let's first consider a single-particle wavefunction $\psi_x$, which depends on the spatial coordinates x. for a system with n indistinguishable particles, we need to construct an n-particle wavefunction $\Psi(x_1, x_2, \ldots, x_n)$ that is antisymmetric with respect to the interchange of any two particles. We can construct such an antisymmetric n-particle wavefunction by taking the determinant of an n x n matrix, whose entries are the single-particle wavefunctions:
+
+$$ \Psi(x_1, x_2, \ldots, x_n) = \det \begin{bmatrix} \psi(x_1) & \psi(x_2) & \cdots & \psi(x_n) \end{bmatrix} $$
+
+The key property of the determinant that ensures antisymmetry is that it changes sign when any two rows (or columns) are interchanged. Mathematically, for any n x n matrix $A$:
+
+$$ det(A) = -det(A') $$
+
+where $A'$ is the matrix obtained by interchanging any two rows (or columns) of $A$.
+
+Now, let's consider the Slater determinant for an n-fermion system:
 
 $$\psi(x_1, x_2, \dots, x_n) = \frac{1}{\sqrt{N!}} \begin{vmatrix}
 \chi_i(x_1) & \chi_j(x_1) & \dots & \chi_k(x_1) \\
@@ -122,39 +132,74 @@ $$\psi(x_1, x_2, \dots, x_n) = \frac{1}{\sqrt{N!}} \begin{vmatrix}
 \chi_i(x_n) & \chi_j(x_n) & \dots & \chi_k(x_n)
 \end{vmatrix}$$
 
-Here, $\chi_i$, $\chi_j$, $\chi_k$ are the molecular spin-orbitals, and $x_i$ represents the spatial and spin coordinates of the $i$-th electron. The $1/\sqrt{N!}$ factor is a normalization constant.
+Here, $\chi_m(x_l)$ represents the the molecular orbital wavefunctions, for the $m$th orbital of the $l$th electron. The $1/\sqrt{N!}$ factor is a normalization constant.
 
-The Slater determinant form ensures that the wavefunction is antisymmetric with respect to the interchange of any two electrons, satisfying the Pauli exclusion principle for fermions.
+If we interchange the coordinates of two particles, say $x_1$ and $x_2$, it corresponds to interchanging two rows of the matrix. According to the property of determinants mentioned above, this operation changes the sign of the determinant:
+
+$$\Psi(x_2, x_1, x_3, \dots, x_n) = -\Psi(x_1, x_2, x_3, \dots, x_n)$$
+
+This sign change satisfies the antisymmetry principle for fermions, which states that the many-particle wavefunction must change sign when any two particles are interchanged.
 
 ### Occupation Number Representation
 
-While the Slater determinant form is useful for theoretical calculations, it is often more convenient to represent the wavefunction in an occupation number representation for computational purposes:
+In the occupation number representation, we specify the many-fermion wavefunction by indicating the occupation of each single-particle state (spin-orbital) by either 0 (unoccupied) or 1 (occupied).
+For a system with n fermions and m spin-orbitals ${\phi_1, \phi_2, \dots, \phi_m}$, the occupation number representation is:
 
-$$|\psi\rangle = \sum_i C_i |n_1 n_2 \dots n_m\rangle$$
+$$|\Psi\rangle = \sum_{i} C_i |n_1^i n_2^i \dots n_m^i\rangle$$
 
-In this representation, $n_i$ is the occupation number (either 0 or 1) indicating whether an electron is present or absent in the $i$-th spin-orbital. The coefficients $C_i$ are the amplitudes of each occupation number configuration.
+Here, $|n_1^i n_2^i \dots n_m^i\rangle$ represents a specific configuration where $n_j^i$ is either 0 or 1, indicating whether the j-th spin-orbital is occupied or unoccupied in the i-th configuration. The coefficients $C_i$ are the amplitudes of each configuration in the overall wavefunction.
 
-This occupation number representation provides a compact way to express the many-electron wavefunction as a linear combination of Slater determinants, where each configuration represents a specific occupation pattern of the spin-orbitals.
+The occupation number representation provides a compact way to express the many-fermion wavefunction as a linear combination of Slater determinants, where each configuration represents a specific occupation pattern of the spin-orbitals, automatically satisfying the antisymmetry principle.
 
-### Simulating Molecular Systems on Quantum Computers
+This representation is particularly useful for computational purposes, as it allows us to work with the occupation numbers directly, rather than dealing with the explicit form of the Slater determinants, which can become increasingly complex for larger systems.
 
-To simulate molecular systems on quantum computers, we need to map the fermionic operators and wavefunctions onto a system of qubits. This is achieved through techniques like the Jordan-Wigner transform (equation 18), which maps the creation and annihilation operators onto products of Pauli operators acting on qubits.
+## Solving
 
-The Variational Quantum Eigensolver (VQE) algorithm provides a way to leverage this mapping and compute the ground-state energy of a molecular system on a quantum computer.
+Sure, let me explain in detail how the Variational Quantum Eigensolver (VQE), Unitary Coupled Cluster Singles and Doubles (UCCSD), and the Hartree-Fock (HF) method are used to solve the problem of finding the ground-state energy of a molecular system, such as the hydrogen molecule.
+
+**Hartree-Fock Method**
+
+The Hartree-Fock (HF) method is a mean-field approximation used in quantum chemistry to obtain an initial estimate of the many-electron wavefunction and energy for a molecular system. It is a crucial starting point for more advanced methods like VQE and UCCSD.
+
+In the HF method, the many-electron wavefunction is approximated as a single Slater determinant constructed from a set of spin-orbitals. The HF equations are solved iteratively to find the optimal set of spin-orbitals that minimize the energy of this Slater determinant, subject to the constraint of being an antisymmetric product of single-particle wavefunctions.
+
+The HF method provides a good initial approximation to the ground-state wavefunction and energy, but it does not account for the instantaneous electron-electron interactions (correlation effects) beyond a mean-field treatment.
+
+In the context of the VQE algorithm, the HF method is often used to generate an initial guess for the wavefunction, which is then refined by the variational optimization procedure.
+
+**Unitary Coupled Cluster Singles and Doubles (UCCSD)**
+
+UCCSD is a specific form of the Ansatz (trial wavefunction) used in the VQE algorithm. It is based on the coupled cluster (CC) method, which is a widely used technique in quantum chemistry for including electron correlation effects beyond the HF approximation.
+
+The UCCSD Ansatz is defined as:
+
+$$|\Psi_{\text{UCCSD}}(\vec{\theta})\rangle = e^{\hat{T}(\vec{\theta})} |\Phi_0\rangle$$
+
+Where $|\Phi_0\rangle$ is the HF reference wavefunction (a single Slater determinant), and $\hat{T}(\vec{\theta})$ is the cluster operator, which is a sum of excitation operators that generate singly and doubly excited Slater determinants from the reference:
+
+$$\hat{T}(\vec{\theta}) = \hat{T}_1(\vec{\theta}) + \hat{T}_2(\vec{\theta})$$
+
+The excitation operators $\hat{T}_1$ and $\hat{T}_2$ are parameterized by the variational parameters $\vec{\theta}$, which are optimized during the VQE procedure.
+
+The UCCSD Ansatz is a compact and efficient way to capture essential electron correlation effects, making it a popular choice for the VQE algorithm in quantum chemistry applications.
+
+**Variational Quantum Eigensolver (VQE)**
+
+The VQE algorithm is a hybrid quantum-classical algorithm that leverages both quantum and classical resources to find the ground-state energy and wavefunction of a molecular system.
 
 The key steps in the VQE algorithm are:
 
-1. **Prepare an Ansatz Wavefunction**: We start with an initial trial wavefunction, called an Ansatz, which is a parameterized quantum circuit acting on the qubit register. This Ansatz is designed to be flexible enough to approximate the true ground-state wavefunction of the molecular system.
+1. **Prepare the Ansatz Wavefunction**: An initial trial wavefunction, called the Ansatz, is prepared on a quantum computer. This Ansatz is a parameterized quantum circuit, often based on a form like UCCSD, acting on the qubit register.
 
 2. **Encode the Molecular Hamiltonian**: The molecular Hamiltonian, expressed as a linear combination of Pauli operators (e.g., equation 22 for the hydrogen molecule), is encoded onto the quantum computer using appropriate quantum gates.
 
-3. **Measure the Energy Expectation Value**: The quantum computer is used to measure the expectation value of the Hamiltonian with respect to the current Ansatz wavefunction: $\langle\psi(\theta)|\hat{H}|\psi(\theta)\rangle$, where $\theta$ represents the parameters of the Ansatz circuit.
+3. **Measure the Energy Expectation Value**: The quantum computer is used to measure the expectation value of the Hamiltonian with respect to the current Ansatz wavefunction: $\langle\Psi(\vec{\theta})|\hat{H}|\Psi(\vec{\theta})\rangle$, where $\vec{\theta}$ represents the parameters of the Ansatz circuit.
 
-4. **Classical Optimization**: A classical optimization algorithm is used to iteratively update the parameters $\theta$ of the Ansatz circuit, minimizing the energy expectation value measured on the quantum computer. This step is repeated until convergence is achieved.
+4. **Classical Optimization**: A classical optimization algorithm, such as the L-BFGS algorithm used in the paper, is employed to iteratively update the parameters $\vec{\theta}$ of the Ansatz circuit, minimizing the energy expectation value measured on the quantum computer. This step is repeated until convergence is achieved.
 
-The key advantage of the VQE algorithm is that it leverages the quantum computer's ability to efficiently represent and manipulate quantum states, while relying on classical optimization techniques to find the optimal parameters for the Ansatz wavefunction.
+The VQE algorithm starts with an initial guess for the wavefunction, typically obtained from the HF method, and then iteratively refines it by optimizing the Ansatz parameters to minimize the energy expectation value. The UCCSD form is often used as the Ansatz due to its ability to capture essential electron correlation effects.
 
-By variationally minimizing the energy expectation value, the VQE algorithm can approximate the ground-state energy and wavefunction of the molecular system with high accuracy, provided that the Ansatz circuit is expressive enough and the quantum hardware has sufficiently low noise and error rates.
+By combining the computational power of quantum computers with classical optimization techniques, the VQE algorithm can approximate the ground-state energy and wavefunction of molecular systems with high accuracy, provided that the Ansatz circuit is expressive enough and the quantum hardware has sufficiently low noise and error rates.
 
-This hybrid quantum-classical approach allows us to tackle computationally challenging problems in quantum chemistry and materials science, paving the way for applications in areas such as drug discovery, catalyst design, and the development of new materials.
+In summary, the HF method provides an initial guess for the wavefunction, the UCCSD form is used as the parameterized Ansatz circuit, and the VQE algorithm iteratively optimizes the Ansatz parameters to find the ground-state energy and wavefunction of the molecular system, leveraging both quantum and classical resources.
 
